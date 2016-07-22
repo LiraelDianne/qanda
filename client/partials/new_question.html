@@ -1,0 +1,9 @@
+<a href="#/">Home</a>
+<button class="logout" ng-click='logout()'>Logout</button>
+<h1>New Question</h1>
+<form ng-submit='create()'>
+    <label for='question'>Question</label><textarea id='question' ng-model='newquestion.content'></textarea>
+    <label for='description'>Description (optional)</label><textarea ng-model='newquestion.description' id='description'></textarea>
+    <button type="button" ng-click='clear()'><a href="#/">Cancel</a></button>
+    <input type="submit" value="Submit">
+</form>

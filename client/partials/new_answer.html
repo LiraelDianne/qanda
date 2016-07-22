@@ -1,0 +1,15 @@
+<div class='nav'>
+    <a href="#/">Home</a> | <a href="#/question/{{question._id}}">Go back to Question</a>
+    <button class="logout" ng-click='logout()'>Logout</button>
+</div>
+<div class="question">
+    <h1>{{question.content}}</h1>
+    <p>{{question.description}}</p>
+</div>
+<form ng-submit='create()'>
+    <label for='answer'>Your Answer</label><textarea id='answer' ng-model='newanswer.content'></textarea>
+    <label for='details'>Supporting details for your answer</label><textarea id='details' ng-model='newanswer.details'></textarea>
+    <input type="hidden" ng-model='newanswer._question' value='{{question._id}}'>
+    <button type="button" ng-click='clear()'><a href="#/">Cancel</a></button>
+    <input type="submit" value="Submit">
+</form>

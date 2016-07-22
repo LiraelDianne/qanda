@@ -1,0 +1,12 @@
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.answer div {
+    display: inline-block;
+}
+
+.likes p {
+    display: inline-block;
+}

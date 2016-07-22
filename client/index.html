@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <!--bower components -->
+    <script src="angular/angular.js" charset="utf-8"></script>
+    <script src="angular-route/angular-route.js" charset="utf-8"></script>
+    <!--app and factories -->
+    <script src="angular/app.js" charset="utf-8"></script>
+    <script src='angular/factories/answersFactory.js'></script>
+    <script src='angular/factories/questionsFactory.js'></script>
+    <script src='angular/factories/usersFactory.js'></script>
+    <!--controllers-->
+    <script src='angular/controllers/homeController.js'></script>
+    <script src='angular/controllers/indexController.js'></script>
+    <script src='angular/controllers/new_questionController.js'></script>
+    <script src='angular/controllers/questionController.js'></script>
+    <script src='angular/controllers/new_answerController.js'></script>
+    <!--css -->
+    <link rel="stylesheet" type="text/css" href="angular/style.css">
+</head>
+<body>
+    <div class='wrapper' ng-view></div>
+</body>
+</html>
